@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Career Path Recommendation</title>
+
+<style>
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#150368,#14035f);
+text-align:center;
+}
+
+.card{
+width:420px;
+margin:60px auto;
+background:rgb(255, 255, 255);
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+h2{
+margin-bottom:20px;
+}
+
+select,input,button{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+background:linear-gradient(90deg,#78e75c,#a29bfe);
+color:white;
+border:none;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.result{
+margin-top:20px;
+text-align:left;
+}
+
+.path-card{
+background:#558cac;
+padding:10px;
+margin:10px 0;
+border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Career Path Recommendation 🎯</h2>
+
+<label>Favorite Subject</label>
+<select id="subject">
+<option>Mathematics</option>
+<option>Science</option>
+<option>Biology</option>
+<option>Chemistry</option>
+<option>English</option>
+<option>Computer</option>
+<option>Kannada</option>
+<option>Environmental science</option>
+<option>Biotechnology</option>
+<option>Electronics</option>
+<option>History</option>
+<option>Geography</option>
+<option>Psychology</option>
+<option>Journalism</option>
+<option>Economics</option>
+<option>Statistics</option>
+<option>Accountancy</option>
+<option>Finance</option>
+</select>
+
+<label>Dream Job</label>
+<select id="job">
+<option>Engineer</option>
+<option>Doctor</option>
+<option>Software Developer</option>
+<option>Lawyer</option>
+<option>Teacher</option>
+<option>Businessman</option>
+<option>Designer</option>
+<option>Police</option>
+<option>Scientist</option>
+<option>Data Scientist</option>
+<option>Statistician</option>
+<option>Pharmacist</option>
+<option>Biotechologist</option>
+<option>Nurse</option>
+<option>Lab Technician</option>
+<option>Financial Analyst</option>
+<option>Content Writer</option>
+<option>Charted Accountant</option>
+<option>Web Developer</option>
+<option>App Developer</option>
+<option>Cyber Security Analyst</option>
+<option>Forest Officer</option>
+<option>Ecologist</option>
+<option>Biotech Engineer</option>
+<option>Archaelogist</option>
+<option>Geologist</option>
+<option>Psychologist</option>
+<option>Counselor</option>
+<option>Reporter</option>
+</select>
+
+<label>Your Interests / Skills</label>
+<input type="text" id="skills" placeholder="Enter your interests">
+
+<button onclick="recommendCareer()">Get Recommendation</button>
+
+<div class="result" id="result"></div>
+
+<button onclick="saveProfile()">Save & Go Profile</button>
+
+</div>
+
+<script>
+
+function recommendCareer(){
+
+let subject = document.getElementById("subject").value;
+let job = document.getElementById("job").value;
+let skills = document.getElementById("skills").value;
+
+let paths = [];
+
+// 🔥 Career Recommendation Logic
+
+
+if(job==="Engineer"){
+    paths = [
+        "10th → PUC Science (PCMC) → KCET/JEE → B.E/B.Tech → Engineer",
+        "10th → Diploma → Lateral Entry B.E → Engineer",
+        "10th → PUC Science → B.Tech → M.Tech → Engineer"
+    ];
+}
+
+else if(job==="Software Developer"){
+    paths = [
+        "10th → PUC Science → B.E CSE → Software Developer",
+        "10th → PUC Science → BCA → MCA → Software Developer",
+        "10th → Any Stream → B.Sc Computer Science → Developer",
+        "10th → Any Stream → Coding Courses → Developer"
+    ];
+}
+
+else if(job==="Teacher"){
+    paths = [
+        "10th → PUC → Degree → B.Ed → Teacher",
+        "10th → PUC Arts → BA → MA → Lecturer",
+        "10th → Any Stream → D.Ed → Primary Teacher"
+    ];
+}
+
+else if(job==="Businessman"){
+    paths = [
+        "10th → PUC Commerce → B.Com → Business",
+        "10th → Any Stream → BBA → MBA → Entrepreneur",
+        "10th → Any Stream → Start Business → Businessman"
+    ];
+}
+
+else if(job==="Designer"){
+    paths = [
+        "10th → Any Stream → B.Des → Designer",
+        "10th → Graphic Design Course → Graphic Designer",
+        "10th → Animation Course → Animator",
+        "10th → Fashion Designing → Fashion Designer"
+    ];
+}
+
+else if(job==="Police"){
+    paths = [
+        "10th → PUC → Degree → Police Exam → Police Officer",
+        "10th → Any Stream → UPSC → IPS Officer",
+        "10th → PUC → SSC → Constable"
+    ];
+}
+
+else if(job==="Scientist"){
+    paths = [
+        "10th → PUC Science → B.Sc → M.Sc → PhD → Scientist",
+        "10th → PUC Science → B.Tech → M.Tech → Research Scientist",
+        "10th → PUC Science → IISER → Scientist"
+    ];
+}
+
+else if(job==="Data Scientist"){
+    paths = [
+        "10th → PUC Science → B.Tech → Data Science Course → Data Scientist",
+        "10th → PUC Science → B.Sc Statistics → Data Scientist",
+        "10th → PUC → BCA → MCA → Data Scientist"
+    ];
+}
+
+else if(job==="Chartered Accountant"){
+    paths = [
+        "10th → PUC Commerce → CA Foundation → CA Intermediate → CA Final → CA",
+        "10th → PUC Commerce → B.Com → CA → Chartered Accountant"
+    ];
+}
+
+else if(job==="Web Developer"){
+    paths = [
+        "10th → PUC Science → BCA → Web Developer",
+        "10th → PUC Science → B.Tech → Web Developer",
+        "10th → Any Stream → Web Development Course → Web Developer"
+    ];
+}
+
+else if(job==="App Developer"){
+    paths = [
+        "10th → PUC Science → BCA / B.Tech → App Developer",
+        "10th → Any Stream → App Development Course → App Developer"
+    ];
+}
+
+else if(job==="Cyber Security Analyst"){
+    paths = [
+        "10th → PUC Science → B.Tech → Cyber Security Course → Analyst",
+        "10th → PUC → BCA → Cyber Security Certification → Analyst"
+    ];
+}
+
+else if(job==="Psychologist"){
+    paths = [
+        "10th → PUC → BA Psychology → MA Psychology → Psychologist",
+        "10th → PUC → Counseling Course → Counselor"
+    ];
+}
+
+else if(job==="Journalist"){
+    paths = [
+        "10th → PUC → BJMC → Journalist",
+        "10th → PUC → BA Journalism → Reporter"
+    ];
+}
+
+else if(job==="Lawyer"){
+    paths = [
+        "10th → PUC → LLB → Lawyer",
+        "10th → PUC → CLAT → BA LLB → Lawyer"
+    ];
+}
+
+else if(job==="Statistician"){
+    paths = [
+        "10th → PUC Science/Commerce → B.Sc Statistics → M.Sc → Statistician",
+        "10th → PUC → B.Stat → Statistician"
+    ];
+}
+
+else if(job==="Pharmacist"){
+    paths = [
+        "10th → PUC Science → D.Pharm → Pharmacist",
+        "10th → PUC Science → B.Pharm → Pharmacist"
+    ];
+}
+
+else if(job==="Biotechnologist"){
+    paths = [
+        "10th → PUC Science → B.Sc Biotechnology → M.Sc → Biotechnologist",
+        "10th → PUC Science → B.Tech Biotechnology → Biotech Job"
+    ];
+}
+
+else if(job==="Nurse"){
+    paths = [
+        "10th → PUC Science → B.Sc Nursing → Nurse",
+        "10th → PUC Science → GNM Course → Nurse"
+    ];
+}
+
+else if(job==="Lab Technician"){
+    paths = [
+        "10th → PUC Science → DMLT → Lab Technician",
+        "10th → PUC Science → B.Sc MLT → Lab Technician"
+    ];
+}
+
+else if(job==="Financial Analyst"){
+    paths = [
+        "10th → PUC Commerce → B.Com → MBA Finance → Financial Analyst",
+        "10th → PUC Commerce → BBA → Finance → Analyst"
+    ];
+}
+
+else if(job==="Content Writer"){
+    paths = [
+        "10th → PUC → BA English → Content Writer",
+        "10th → PUC → Journalism Course → Content Writer"
+    ];
+}
+
+else if(job==="Ecologist"){
+    paths = [
+        "10th → PUC Science → B.Sc Environmental Science → Ecologist",
+        "10th → PUC Science → M.Sc Ecology → Ecologist"
+    ];
+}
+
+else if(job==="Biotech Engineer"){
+    paths = [
+        "10th → PUC Science → B.Tech Biotechnology → Biotech Engineer"
+    ];
+}
+
+else if(job==="Archaeologist"){
+    paths = [
+        "10th → PUC Arts → BA History → MA Archaeology → Archaeologist"
+    ];
+}
+
+else if(job==="Geologist"){
+    paths = [
+        "10th → PUC Science → B.Sc Geology → Geologist"
+    ];
+}
+
+else if(job==="Counselor"){
+    paths = [
+        "10th → PUC → BA Psychology → Counseling Course → Counselor"
+    ];
+}
+
+else if(job==="Reporter"){
+    paths = [
+        "10th → PUC → BJMC → Reporter",
+        "10th → PUC → Journalism Degree → Reporter"
+    ];
+}
+
+// 🔥 Show Multiple Results
+let output = "<h3>Recommended Career Paths:</h3>";
+
+paths.forEach(function(p){
+output += `<div class="path-card">👉 ${p}</div>`;
+});
+
+// Save data (for profile page)
+localStorage.setItem("subject", subject);
+localStorage.setItem("dreamJob", job);
+localStorage.setItem("skills", skills);
+localStorage.setItem("careerPaths", JSON.stringify(paths));
+
+// Display result
+document.getElementById("result").innerHTML = output;
+}
+
+// Move to profile
+function saveProfile(){
+window.location="profile.html";
+}
+
+</script>
+
+</body>
+</html>

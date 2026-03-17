@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body{font-family:Arial;height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#43cea2,#185a9d);}
+.card{background:white;padding:30px;border-radius:15px;width:350px;text-align:center;}
+input,button{width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid #ccc;}
+button{background:#0984e3;color:white;border:none;}
+</style>
+</head>
+<body>
+
+<div class="card"> 
+<h2>Login</h2>
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+</div> 
+
+<script>
+function login(){
+if(email.value===localStorage.getItem("email") &&
+password.value===localStorage.getItem("password")){
+window.location="dashboard.html";
+}else{
+alert("Invalid Login");
+}
+}
+</script>
+
+</body>
+</html>
