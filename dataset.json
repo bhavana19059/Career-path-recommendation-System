@@ -1,0 +1,264 @@
+[
+  {
+    "career": "Engineer",
+    "subjects": ["Mathematics","Science","Electronics"],
+    "paths": [
+      "10th → PUC Science → KCET/JEE → B.E/B.Tech",
+      "10th → Diploma → Lateral Entry B.E",
+      "10th → PUC → B.Tech → M.Tech"
+    ]
+  },
+  {
+    "career": "Doctor",
+    "subjects": ["Biology","Chemistry"],
+    "paths": [
+      "PUC Science → NEET → MBBS",
+      "PUC Science → NEET → BAMS",
+      "PUC → BDS → Dentist",
+      "PUC → MBBS → MD/MS"
+    ]
+  },
+  {
+    "career": "Software Developer",
+    "subjects": ["Computer","Mathematics"],
+    "paths": [
+      "PUC → B.E CSE → Developer",
+      "PUC → BCA → MCA",
+      "Any Stream → Degree → Coding Courses"
+    ]
+  },
+  {
+    "career": "Lawyer",
+    "subjects": ["History","English"],
+    "paths": [
+      "PUC (Any Stream) → Degree → LLB (3 year)",
+      "PUC → CLAT → BA LLB (5 years)"
+    ]
+  },
+  {
+    "career": "Teacher",
+    "subjects": ["English","History"],
+    "paths": [
+      "PUC → Degree → B.Ed",
+      "PUC → BA → MA → Lecturer",
+      "PUC → Degree → Post Graduation → Teacher"
+    ]
+  },
+  {
+    "career": "Businessman",
+    "subjects": ["Economics","Finance","Accountancy"],
+    "paths": [
+      "PUC Commerce → B.Com → MBA",
+      "BBA → MBA",
+      "Start Business Directly"
+    ]
+  },
+  {
+    "career": "Designer",
+    "subjects": ["Computer","English"],
+    "paths": [
+      "PUC → NIFT Entrance Exam → B.Des",
+      "PUC → Graphic Design Course",
+      "Animation Course",
+      "PUC → Bachelor of Fine Arts (BFA)"
+    ]
+  },
+  {
+    "career": "Police",
+    "subjects": ["History","Geography"],
+    "paths": [
+      "PUC → Degree → Police Exam",
+      "PUC → Degree → UPSC → IPS",
+      "Degree → SSC → Constable"
+    ]
+  },
+  {
+    "career": "Scientist",
+    "subjects": ["Science","Mathematics"],
+    "paths": [
+      "PUC Science → B.Sc → M.Sc → PhD",
+      "PUC Science → B.Tech → M.Tech",
+      "PUC Science → IISER (BS-MS Dual Degree) → PhD"
+    ]
+  },
+  {
+    "career": "Data Scientist",
+    "subjects": ["Mathematics","Statistics","Computer"],
+    "paths": [
+      "PUC Science → B.Tech → Data Science",
+      "PUC → B.Sc → MSc → PhD ",
+      "BCA → MCA"
+    ]
+  },
+  {
+    "career": "Statistician",
+    "subjects": ["Statistics","Mathematics"],
+    "paths": [
+      "PUC Science → BSc → MSc → PhD(Statistics)",
+      "puc Science/Commerce → BSC (Statistics/Mathematics) → MSc(Statistics)",
+      "PUC → BSc → MSc → M.Sc Statistics"
+    ]
+  },
+  {
+    "career": "Pharmacist",
+    "subjects": ["Chemistry","Biology"],
+    "paths": [
+      "PUC Science → D.Pharm",
+      "PUC Science → B.Pharm",
+      "PUC → B.Pharm → M.Pharm"
+    ]
+  },
+  {
+    "career": "Biotechnologist",
+    "subjects": ["Biology","Biotechnology"],
+    "paths": [
+      "PUC Science → B.Sc Biotechnology → MSc BIotech",
+      "PUC → B.Tech Biotech → M.Tech → PhD",
+      "PUC → BSc → M.Sc Biotechnology"
+    ]
+  },
+  {
+    "career": "Nurse",
+    "subjects": ["Biology"],
+    "paths": [
+      "PUC → B.Sc Nursing",
+      "10th → para medical",
+      "PUC Science → GNM Course"
+    ]
+  },
+  {
+    "career": "Lab Technician",
+    "subjects": ["Biology","Chemistry"],
+    "paths": [
+      "Science PUC → BSc → Lab technician ",
+      "DMLT → BMLT → lab technician",
+      "Lab Internship"
+    ]
+  },
+  {
+    "career": "Financial Analyst",
+    "subjects": ["Finance","Accountancy"],
+    "paths": [
+      "PUC Commerce → B.Com → MBA Finance",
+      "PUC → BBA Finance",
+      "PUC → B.Com → CA → Analyst"
+    ]
+  },
+  {
+    "career": "Content Writer",
+    "subjects": ["English","Journalism"],
+    "paths": [
+      "BA English",
+      "Journalism Course",
+      "Freelance Writing"
+    ]
+  },
+  {
+    "career": "Chartered Accountant",
+    "subjects": ["Accountancy","Finance"],
+    "paths": [
+      "PUC → Degree → CA Foundation → Final",
+      "PUC Commerece → B.Com + CA",
+      "PUC Commerce → CA"
+    ]
+  },
+  {
+    "career": "Web Developer",
+    "subjects": ["Computer"],
+    "paths": [
+      "Learn HTML/CSS/JS",
+      "PUC → B.Tech ",
+      "PUC → BCA → MCA"
+    ]
+  },
+  {
+    "career": "App Developer",
+    "subjects": ["Computer"],
+    "paths": [
+      "PUC → Android Courses → Projects",
+      "PUC Science → B.Tech",
+      "PUC → BCA → MCA"
+    ]
+  },
+  {
+    "career": "Cyber Security Analyst",
+    "subjects": ["Computer"],
+    "paths": [
+      "PUC → BCA → MCA → Cyber Security Course",
+      "PUC → B.Tech → Courses",
+      "Ethical Hacking"
+    ]
+  },
+  {
+    "career": "Forest Officer",
+    "subjects": ["Environmental science"],
+    "paths": [
+      "Forest Exam",
+      "B.Sc Forestry",
+      "UPSC IFS"
+    ]
+  },
+  {
+    "career": "Ecologist",
+    "subjects": ["Environmental science","Biology"],
+    "paths": [
+      "B.Sc Environmental Science",
+      "M.Sc Ecology",
+      "Research Work"
+    ]
+  },
+  {
+    "career": "Biotech Engineer",
+    "subjects": ["Biotechnology","Biology"],
+    "paths": [
+      "B.Tech Biotechnology",
+      "M.Tech",
+      "Research"
+    ]
+  },
+  {
+    "career": "Archaeologist",
+    "subjects": ["History"],
+    "paths": [
+      "BA History",
+      "MA Archaeology",
+      "Field Research"
+    ]
+  },
+  {
+    "career": "Geologist",
+    "subjects": ["Geography","Science"],
+    "paths": [
+      "B.Sc Geology",
+      "M.Sc Geology",
+      "Field Work"
+    ]
+  },
+  {
+    "career": "Psychologist",
+    "subjects": ["Psychology"],
+    "paths": [
+      "PUC Any Stream → Psychology Degree → Courses",
+      "PUC → BA Psychology",
+      "PUC → BA (Psychology) → MA (Psychology)"
+    ]
+  },
+  {
+    "career": "Counselor",
+    "subjects": ["Psychology"],
+    "paths": [
+      "PUC Any Stream → Psychology Degree → Counseling Course",
+      "PUC → BA Psychology",
+      "PUC → BA (Psychology) → MA (Psychology)"
+    ]
+  },
+  {
+    "career": "Reporter",
+    "subjects": ["Journalism","English"],
+    "paths": [
+      "BJMC",
+      "Journalism Degree",
+      "Internship"
+    ]
+  }
+]

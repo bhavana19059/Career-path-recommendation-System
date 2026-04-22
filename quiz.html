@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interest Quiz</title>
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#150368,#14035f);
+    text-align: center;
+}
+
+.card{
+    width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg,#78e75c,#a29bfe);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2 style="text-align:center;">Interest Quiz 🧠</h2>
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<p>1. What do you enjoy most?</p>
+<input type="radio" name="q1" value="tech"> Coding<br>
+<input type="radio" name="q1" value="business"> Business ideas<br>
+<input type="radio" name="q1" value="creative"> Drawing<br>
+<input type="radio" name="q1" value="social"> Helping people<br>
+
+<!-- Q2 -->
+<p>2. Your favorite activity?</p>
+<input type="radio" name="q2" value="tech"> Build apps<br>
+<input type="radio" name="q2" value="business"> Selling<br>
+<input type="radio" name="q2" value="creative"> Writing<br>
+<input type="radio" name="q2" value="social"> Teaching<br>
+
+<!-- Q3 -->
+<p>3. What kind of videos do you watch?</p>
+<input type="radio" name="q3" value="tech"> Tech tutorials<br>
+<input type="radio" name="q3" value="business"> Startup/business<br>
+<input type="radio" name="q3" value="creative"> Art/music<br>
+<input type="radio" name="q3" value="social"> Motivation/social work<br>
+
+<!-- Q4 -->
+<p>4. Which subject do you like most?</p>
+<input type="radio" name="q4" value="tech"> Computer Science<br>
+<input type="radio" name="q4" value="business"> Economics<br>
+<input type="radio" name="q4" value="creative"> Literature<br>
+<input type="radio" name="q4" value="social"> Psychology<br>
+
+<!-- Q5 -->
+<p>5. What would you do in free time?</p>
+<input type="radio" name="q5" value="tech"> Code a project<br>
+<input type="radio" name="q5" value="business"> Plan business idea<br>
+<input type="radio" name="q5" value="creative"> Create art/music<br>
+<input type="radio" name="q5" value="social"> Volunteer/help<br>
+
+<!-- Q6 -->
+<p>6. Which career sounds exciting?</p>
+<input type="radio" name="q6" value="tech"> Software Engineer<br>
+<input type="radio" name="q6" value="business"> Entrepreneur<br>
+<input type="radio" name="q6" value="creative"> Designer<br>
+<input type="radio" name="q6" value="social"> Counselor<br>
+
+<!-- Q7 -->
+<p>7. What is your strength?</p>
+<input type="radio" name="q7" value="tech"> Logical thinking<br>
+<input type="radio" name="q7" value="business"> Leadership<br>
+<input type="radio" name="q7" value="creative"> Creativity<br>
+<input type="radio" name="q7" value="social"> Communication<br>
+
+<!-- Q8 -->
+<p>8. What motivates you?</p>
+<input type="radio" name="q8" value="tech"> Innovation<br>
+<input type="radio" name="q8" value="business"> Money/success<br>
+<input type="radio" name="q8" value="creative"> Self-expression<br>
+<input type="radio" name="q8" value="social"> Helping others<br>
+
+<!-- Q9 -->
+<p>9. What role do you take in a group?</p>
+<input type="radio" name="q9" value="tech"> Problem solver<br>
+<input type="radio" name="q9" value="business"> Leader<br>
+<input type="radio" name="q9" value="creative"> Idea generator<br>
+<input type="radio" name="q9" value="social"> Supporter<br>
+
+<!-- Q10 -->
+<p>10. What is your dream goal?</p>
+<input type="radio" name="q10" value="tech"> Build software<br>
+<input type="radio" name="q10" value="business"> Start company<br>
+<input type="radio" name="q10" value="creative"> Create art<br>
+<input type="radio" name="q10" value="social"> Help society<br>
+
+<!-- SUBMIT BUTTON -->
+<button type="button" onclick="submitQuiz()">Submit Quiz 🚀</button>
+
+</form>
+
+</div>
+
+<script>
+
+function submitQuiz(){
+
+    let form = document.forms["quizForm"];
+
+    let tech = 0, business = 0, creative = 0, social = 0;
+
+    for(let i=1; i<=10; i++){
+
+        let answer = form["q"+i].value;
+
+        if(!answer){
+            alert("Please answer all questions!");
+            return;
+        }
+
+        if(answer === "tech") tech++;
+        else if(answer === "business") business++;
+        else if(answer === "creative") creative++;
+        else if(answer === "social") social++;
+    }
+
+    // Store result
+    localStorage.setItem("tech", tech);
+    localStorage.setItem("business", business);
+    localStorage.setItem("creative", creative);
+    localStorage.setItem("social", social);
+
+    // Redirect to result page
+    window.location.href = "result.html";
+}
+
+</script>
+
+</body>
+</html>

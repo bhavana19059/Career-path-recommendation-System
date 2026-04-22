@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Result</title>
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#150368,#14035f);
+    text-align: center;
+    color: white;
+}
+
+.card{
+    width: 450px;
+    margin: 60px auto;
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.result-box{
+    background:#558cac;
+    color:white;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Your Interest Result 🎯</h2>
+
+<p id="interest"></p>
+
+<h3>Suggested Career Options:</h3>
+<div id="careers"></div>
+
+<br>
+<button onclick="goDashboard()">⬅ Back to Dashboard</button>
+
+</div>
+
+<script>
+
+// Get scores
+let tech = parseInt(localStorage.getItem("tech")) || 0;
+let business = parseInt(localStorage.getItem("business")) || 0;
+let creative = parseInt(localStorage.getItem("creative")) || 0;
+let social = parseInt(localStorage.getItem("social")) || 0;
+
+// Find max
+let max = Math.max(tech, business, creative, social);
+
+let interest = "";
+let careers = [];
+
+// Decide interest + careers
+if(max === tech){
+    interest = "Technology 👨‍💻";
+    careers = ["Software Developer", "Web Developer", "AI Engineer", "Cyber Security Analyst"];
+}
+else if(max === business){
+    interest = "Business 📊";
+    careers = ["Entrepreneur", "Marketing Manager", "Financial Analyst", "Business Consultant"];
+}
+else if(max === creative){
+    interest = "Creative 🎨";
+    careers = ["Graphic Designer", "Content Creator", "Animator", "UI/UX Designer"];
+}
+else{
+    interest = "Social 🤝";
+    careers = ["Teacher", "Counselor", "Social Worker", "Psychologist"];
+}
+
+// Show interest
+document.getElementById("interest").innerHTML = 
+    "<b>Your Interest Area:</b> " + interest;
+
+// Show careers
+let output = "";
+careers.forEach(c => {
+    output += `<div class="result-box">👉 ${c}</div>`;
+});
+
+document.getElementById("careers").innerHTML = output;
+
+// Button function
+function goDashboard(){
+    window.location.href = "index.html"; // your dashboard file
+}
+
+</script>
+
+</body>
+</html>
